@@ -1,38 +1,1312 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+/* font-family: Inter; */
+body{
+  background: #F8F9FC;
+}
+button.btn {
+  width: 164px;
+  height: 48px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Lato';
+  background-color: #0052FF;
+}
+.pos-rel{
+  position: relative;
+}
+#header .header-top{
+  padding: 10px 20px;
+}
+#header .me-auto.navbar-nav {
+  margin-left: 60px;
+}
+#header .navbar-nav {
+  margin-right: 35px;
+}
+#header a.nav-link {
+  font-size: 18px;
+  font-family: lato;
+  font-weight: 500;
+  color: #303030;
+}
+
+#header-pop-bar{
+  background: rgb(0,82,255);
+background: linear-gradient(90deg, rgba(0,82,255,1) 0%, rgba(81,121,255,1) 35%);
+padding: 10px 0px;
+}
+#header-pop-bar .inner-box span:first-child {
+  background: #123FAA;
+  padding: 8px 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+#header-pop-bar .inner-box {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+} 
+#header-pop-bar .inner-box p {
+  color: #fff;
+  margin-left: 36px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 14px;
+}
+#header-pop-bar .inner-box a {
+  color: #fff;
+  margin-left: 7px;
+}
+#header-pop-bar span#headerbottonBtn {
+  position: absolute;
+  right: 0px;
+  top: 7px;
+}
+#header-pop-bar span#headerbottonBtn path {
+  color: #fff;
+}
+
+#herosection .hero-banner-left .sub-headaing {
+  margin-top: 100px;
+}
+#herosection .hero-banner-left h6 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #375BD2;
+  display: inline;
+  position: relative;
+}
+#herosection .hero-banner-left .sub-headaing h6:after {
+  bottom: -25px;
+  content: '';
+  background: url(../public/img/Vector49.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -160px;
+}
+#herosection .hero-banner-left h1 {
+ 
+  color: #1A2B6B;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 25px;
+}
+#herosection .hero-banner-left p {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6B6B6B;
+  margin-top: 30px;
+  margin-bottom: 40px
+}
+#herosection .hero-banner-left .news-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#herosection .hero-banner-left .news-img {
+  width: 480px;
+  height: 24px;
+}
+#herosection .hero-banner-left .news-img img {
+  width: 480px;
+  height: 24px;
+  margin-top: 70px;
+  margin-left: 35px;
+}
+#herosection .hero-banner-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#herosection .hero-banner-right .img-box {
+  width: 300px;
+  height: 510px;
+  margin-top: 50px;
+}
+#herosection .hero-banner-right .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#herosection .hero-banner-right:before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: #ee68811c;
+  border-radius: 50px;
+  position: absolute;
+  top: 23px;
+  right: 84px;
+}
+.hero-banner-right:after {
+  width: 40px;
+  height: 40px;
+  background: #4a6ee526;
+  border-radius: 50px;
+  content: '';
+  bottom: 0px;
+  left: 100px;
+  position: absolute;
+}
+#herosection:after {
+
+  content: '';
+  background: url(../public/img/Group218.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -95%;
+  bottom: -81%;
+}
+
+#herosection::before {
+  content: '';
+  background: url(../public/img/Group218.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 81px;
+  bottom: -88%;
+}
+
+section#herosection {
+  overflow: hidden;
+}
+
+section#happyusers {
+  background: linear-gradient(90deg, #2349C6 0%, #4F72E9 100%);
+  padding: 20px;
+  box-shadow: 8px 12px 40px 0px #375BD24A;
+  color: #fff;
+  font-family: 'Lato';
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 32px;
+}
+section#happyusers span {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Lato';
+  letter-spacing: 2px;
+  line-height: 26px;
+}
+section#happyusers p{
+  margin-bottom: 0px;
+}
+
+#investing-sec .outer-main-box .card-incos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+height: 65px;
+top: 1115px;
+left: 227px;
+border-radius: 8px;
+border: 2px solid rgba(55, 91, 210, 0.19);
+background: linear-gradient(0deg, rgba(247, 248, 252, 0.8), rgba(247, 248, 252, 0.8));
+border-color: rgba(55, 91, 210, 0.19);
+}
+
+#investing-sec .outer-main-box .card-title.h5 {
+  font-family: Lato;
+font-size: 32px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: left;
+color:#0052FF;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+#investing-sec .outer-main-box p.card-text {
+  font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+color:#727272;
+}
+#investing-sec .outer-main-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+#investing-sec .outer-main-box .card.card-box {
+  box-shadow: 4px 4px 60px 0px #375BD21A;
+  border: 1px solid #375BD23D;
+  border-radius:16px;
+
+}
+#investing-sec .section-heading{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#investing-sec .section-heading h1{
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #1A2B6B;
+}
+#investing-sec .section-heading p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #6F6F6F;
+  max-width: 473px;
+  width: 100%;
+  margin: auto;
+  margin-top: 25px;
+}
+#investing-sec .section-heading span, #investing-key-sec .heading-sec span, #cryptobut_section .heading-sec span, #essentials-sec .heading-sec span, #crypto-invets .section-heading span,#powerful-section h1 span:last-child, #faq-section .heading-sec span {
+  width: 8px;
+  height: 8px;
+  background-color: #E3297E;
+  display: inline-block;
+  border-radius: 50px;
+  margin-left: -2px;
+}
+#investing-sec .outer-main-box.row p.card-text span {
+  color: #375BD2;
+  font-weight: 700;
+}
+#investing-sec {
+  position: relative;
+  padding: 80px 0px;
+  overflow: hidden;
 }
 
+#investing-sec::before {
+  content: '';
+  background: url(../public/img/Group222.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 111px;
+  bottom: -80%;
+}
+
+#investing-key-sec{
+  background-color: #254AC7;
+  height: 672px;
+  overflow: hidden;
+}
+#investing-key-sec .heading-sec {
+  padding-top: 80px;
+}
+#investing-key-sec .heading-sec h1 {
+  font-family: Lato;
+font-size: 40px;
+font-weight: 800;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: center;
+color: #fff;
+
+}
+#investing-key-sec .heading-sec p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color:  #FFFFFFB8;
+  margin-top: 25px;
+}
+#investing-key-sec .deposit-sec {
+  width: 680px;
+  border: 2px solid #FFFFFF2B;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 45px;
+  padding: 20px 30px;
+}
+#investing-key-sec .deposit-sec p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: left;
+  color: #fff;
+  letter-spacing: 1px;
+} 
+#investing-key-sec .progress {
+  height: 11px;
+  border-radius: 20px;
+}
+#investing-key-sec .progerss-row span {
+  right: 37%;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50px;
+  position: absolute;
+  display: inline-block;
+  top: -11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#investing-key-sec .progerss-row {
+  position: relative;
+}
+#investing-key-sec .progress-bar.bg-success {
+  opacity: 97%;
+  background: linear-gradient(270deg, #E3297E 0%, #F13D90 100%);
+}
+#investing-key-sec .price {
+  display: flex;
+  justify-content: space-between;
+}
+#investing-key-sec .price small {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  /* letter-spacing: -0.02em; */
+  text-align: left;
+  color: #fff;
+  margin-top: 7px;
+  padding: 0px 3px;
+}
+#investing-key-sec .accounts {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+#investing-key-sec .saving-account {
+  width: 320px;
+  height: 90px;
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 30px;
+  padding: 15px 35px;
+}
+
+#investing-key-sec .crypto-account {
+  width: 320px;
+  height: 90px;
+  background: #fff;
+  border-radius: 8px; 
+  padding: 15px 35px;
+}
+#investing-key-sec .saving-account p, #investing-key-sec .crypto-account p {
+  margin-bottom: 10px;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: left;
+  color: #254BC7;
+  position: relative;
+}
+#investing-key-sec .crypto-account p{
+  color: #254AC799;
+  ;
+}
+#investing-key-sec .saving-account h5, #investing-key-sec .crypto-account h5 {
+  margin-bottom: 0px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #505050;
+  
+}
+
+#investing-key-sec .saving-account p:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #254BC7;
+  position: absolute;
+  content: '';
+  top: 3px;
+  left: -23px;
+}
+#investing-key-sec .crypto-account p::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #254AC799;
+  position: absolute;
+  content: '';
+  top: 3px;
+  left: -23px;
+} 
+
+#invest-chart-sec .chart-img {
+  width: 1024px;
+  height: 412px;
+  margin: auto;
+}
+#invest-chart-sec .chart-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.chart-innerbox p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #A1A1A1;
+  max-width: 810px;
+  margin: auto;
+  width: 100%;
+}
+#investing-key-sec:after {
+  content: '';
+  background: url(../public/img/Rectangle52.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -94.5%;
+  top: 5%;
+}
+
+#investing-key-sec ::before {
+  content: '';
+  background: url(../public/img/Rectangle53.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -94.5%;
+  top: 20%;
+}
+#invest-chart-sec:after {
+  content: '';
+  background: url(../public/img/Rectangle52.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -94%;
+  top: -63%;
+  transform: rotate(180deg);
+}
+
+#invest-chart-sec::before {
+    content: '';
+    background: url(../public/img/Rectangle53.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -95%;
+    top: -50%;
+    transform: rotate(180deg);
+}
+#invest-chart-sec {
+  overflow: hidden;
+  margin-top: -240px;
+}
+
+#cryptobut_section .heading-sec h1{
+  font-family: Lato;
+font-size: 40px;
+font-weight: 800;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: center;
+color: #1A2B6B;
+}
+#cryptobut_section .heading-sec p{
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+ color: #6F6F6F;
+ margin-top: 20px;
+  
+}
+#cryptobut_section svg.bi.bi-arrow-up-square {
+  color: #53D258;
+}
+#cryptobut_section .table-heading th {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #A9A9A9 !important;
+}
+#cryptobut_section .token-name{
+  font-family: Lato;
+font-size: 18px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0px;
+text-align: left;
+color: #2C3131 !important;
+}
+#cryptobut_section .symbol-name{
+  font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0px;
+color: #626262 !important;
+
+}
+#cryptobut_section .price-col{
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0px;
+
+color:  #2C3131 !important;
+}
+#cryptobut_section .change-price{
+font-family: Inter;
+font-size: 14px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0px;
+
+color: #53D258 !important; 
+
+}
+#cryptobut_section .market-cap{
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0px;
+
+color: #2C3131 !important;
+
+
+}
+#cryptobut_section button.crypto-btn {
+  border-radius: 4px;
+  border: solid 1px #0052FF;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 25px;
+  /* letter-spacing: 0px; */
+  text-align: center;
+  color: #0052FF;
+  background: #fff;
+  display: inline-block;
+  padding: 0px 30px;
+}
+#cryptobut_section td.cryp-btn {
+  text-align: center;
+}
+/* td.change-price {
+  text-align: center;
+  align-items: center;
+  display: flex;
+} */
+/* td.token-name {
+  display: flex;
+  align-items: center;
+} */
+#cryptobut_section tbody tr td {
+  border: none;
+}
+#cryptobut_section td.change-price svg {
+  margin-right: 3px;
+  margin-top: -4px;
+}
+#cryptobut_section table.table {
+  text-align: center;
+}
+#cryptobut_section tr.table-heading th {
+  text-align: center;
+}
+#cryptobut_section tr.table-heading th.token-row {
+  text-align: left ;
+}
+#cryptobut_section .table-responsive-sm {
+  border-radius: 16px;
+  box-shadow: 1px 4px 44px 0px #00000014;
+  padding: 10px 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+#cryptobut_section .table-top-heading {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-align: center;
+  padding: 23px 0px 30px;
+}
+#cryptobut_section {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+#cryptobut_section .heading-sec {
+  padding-bottom: 40px;
+}
+#cryptobut_section .buy-table::before {
+  content: '';
+  background: url(../public/img/Rectangle54.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -86%;
+  top: 25%;
+}
+#cryptobut_section .buy-table:after {
+  content: '';
+  background: url(../public/img/Group222.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 94px;
+    bottom: -80%;
+    z-index: -1;
+}
+#terablock {
+  padding: 80px 0px;
+  background: linear-gradient(91.86deg, #2349C6 1.57%, #4F72E9 98.43%);
+}
+
+#terablock .sec-heading h1 {
+
+  font-family: Lato;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+}
+#terablock .sec-heading {
+  margin-bottom: 80px;
+}
+
+#terablock .tera-box-card, #terablock .card.card-box  {
+  background-color: transparent;
+  border: none;
+}
+#terablock .card-body .card-title {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}
+#terablock .card-body  p.card-text {
+  font-family: Lato;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFFCC;
+  margin-top: 20px;
+}
+#terablock .card-body .card-incos {
+  background-color: #fff;
+  width: 57px;
+  height: 57px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+} 
+#profolio-sec {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+#profolio-sec .heading-sec h1 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #1A2B6B;
+}
+#profolio-sec .heading-sec p {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #6F6F6F;
+  margin-top: 25px;
+}
+#profolio-sec .portfolio-inner-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  position: relative;
+}
+#profolio-sec .portfolio-inner-box  .card.card-box{
+  border: 1px solid #375BD23D;
+  box-shadow: 4px 4px 60px 0px #375BD21A;
+}
+#profolio-sec .portfolio-inner-box .card-title.h5 {
+  color: #0052FF;
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 22px 0px;
+}
+#profolio-sec .portfolio-inner-box p.card-text {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #727272;
+}
+#profolio-sec .portfolio-inner-box .card-incos {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  border: solid 1.6px #375BD230;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8fccc;
+}
+#profolio-sec .portfolio-inner-box .card-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+#profolio-sec .portfolio-inner-box .card-top-row .box-numb h1 {
+  font-family: Lato;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #DAE6FF;
+}
+#profolio-sec .portfoli-btn {
+  margin-top: 50px;
+  text-align: center;
+}
+#profolio-sec .portfolio-inner-box:after {
+  content: '';
+  background: url(../public/img/Group222.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -31px;
+  bottom: -85%;
+    z-index: -1;
+}
+section#essentials-sec {
+  background: linear-gradient(104.65deg, #2349C6 0%, #4F72E9 100%);
+  padding: 80px 0px;
+}
+
+
+#essentials-sec .heading-sec h1 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+}
+#essentials-sec .heading-sec {
+  margin-bottom: 50px;
+}
+#essentials-sec .react-multi-carousel-list {
+  padding: 30px 0px;
+}
+#essentials-sec .heading-sec p {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center;
+  color: #FFFFFFB5;
+  max-width: 640px;
+  margin: auto;
+  margin-top: 20px;
+}
+#essentials-sec .inner-card-box {
+  box-shadow: 2px 3px 30px 0px #00000040;
+  border: 2px solid #FFFFFF61;
+  border-radius: 8px;
+  padding: 1px;
+  background: #fff;
+}
+#essentials-sec .react-multi-carousel-item {
+  margin: 0px 30px;
+}
+#essentials-sec .card-inner-content {
+  padding: 20px;
+}
+#essentials-sec .img-box {
+  width: 100%;
+  height: 180px;
+}
+#essentials-sec .img-box img {
+  width: 100%;
+  height: 100%;
+}
+#essentials-sec .card-inner-content h5 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #000;
+}
+#essentials-sec .card-inner-content p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #A6A6A6;
+}
+#essentials-sec .card-inner-content a {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  text-decoration: none;
+}
+#essentials-sec .essentials-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+#essentials-sec .ess-btn {
+  background: #d7e4ff9e !important;
+  border-color: #fff !important;
+
+}
+#essentials-sec .ess-btn-left {
+  background: #fff !important;
+  color:  #0E2676 !important;
+  margin-right: 20px;
+
+}
+
+#crypto-invets .card-incos {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  border: 1.6px solid #375BD230;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F8FC;
+  margin-bottom: 30px;
+}
+#crypto-invets .card-title.h5 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 23px;
+}
+#crypto-invets .card-body a {
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#crypto-invets .card.card-box {
+  box-shadow: 4px 4px 60px 0px #375BD21A;
+  border: 1px solid #375BD23D;
+  border-radius: 16px;
+}
+#crypto-invets {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+#crypto-invets .section-heading h1 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #1A2B6B;
+  max-width: 925px;
+  line-height: 53px;
+  margin: auto;
+}
+#crypto-invets .section-heading {
+  text-align: center;
+  margin: auto;
+}
+#crypto-invets .outer-row.row {
+  padding: 80px 0px 60px;
+  position: relative;
+}
+#crypto-invets .outer-row.row::after {
+
+  content: '';
+  background: url(../public/img/Group2173.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -90.3%;
+  bottom: -66%;
+  z-index: -1;
+}
+#powerful-section {
+  padding: 80px 0px;
+  background: linear-gradient(265.04deg, #2349C6 0%, #4F72E9 99.66%);
+}
+#powerful-section .card-box-inner {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 16px;
+}
+#powerful-section .card-box-inner h2 {
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-right: 40px;
+  color: #000;
+}
+#powerful-section .card-box-inner p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #8A8A8A;
+  margin-top: 24px;             
+}
+#powerful-section {
+  padding: 120px 0px;
+  background: linear-gradient(265.04deg, #2349C6 0%, #4F72E9 99.66%);
+  overflow: hidden;
+}
+#powerful-section .powerful-title h1 {
+  color: #fff;
+}
+
+#powerful-section span.heading{
+  color: #E9E9E9  ;
+}
+#powerful-section .powerful-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#powerful-section:after {
+
+  content: '';
+  background: url(../public/img/Group5394.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1%;
+    bottom: -84%;
+}
+#faq-section {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+#faq-section:after {
+
+  content: '';
+  background: url(../public/img/Group537.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1%;
+  bottom: -18%;
+}
+#faq-section::before {
+
+  content: '';
+  background: url(../public/img/Group536.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -96%;
+  bottom: -68%;
+}
+#faq-section .accordion-item {
+  box-shadow: 0px 2px 20px 0px #0000000F !important;
+  border: 1.2px solid #0052FF33 !important;
+  border-radius: 14px !important;
+}
+#faq-section .accordion-item {
+  margin-bottom: 30px;
+}
+
+#faq-section .accordion-flush .accordion-item .accordion-button, #faq-section .accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 16px !important;
+  background-color: #fff;
+  border: none !important;
+  border-color: transparent;
+}
+#faq-section .accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+#faq-section button.accordion-button {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000 !important;
+}
+#faq-section .accordion-body {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #797979;
+}
+ 
+#faq-section .accordion-button::after {
+  background-image: url(../public/img/Group5356.svg) !important;
+
+}
+#faq-section .accordion-button:not(.collapsed)::after {
+background-image: url(../public/img/Group5357.svg) !important;
+}
+
+#faq-section .heading-sec h1 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #1A2B6B;
+  max-width: 925px;
+  line-height: 53px;
+  margin: auto;
+}
+#faq-section .heading-sec p {
+  font-family: Lato;
+font-size: 18px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0.4000000059604645px;
+text-align: center;
+color: #6F6F6F;
+margin-top: 10px;
+}
+#faq-section .faq-question {
+  margin: 70px 0px;
+}
+#footer-sec {
+  background: #284BBF;
+  padding: 60px 0px;
+}
+#footer-sec .footer-comp-info {
+  padding-right: 90px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#footer-sec .footer-top-sec .footer-comp-info .footer-info h6 {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: #fff;
+  margin-top: 23px;
+}
+#footer-sec .footer-top-sec .footer-comp-info p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffffad;
+}
+#footer-sec .footer-comp-info .footer-info input {
+  width: 100%;
+  height: 32px;
+  border-radius: 5px;
+  border: solid 1px #fff;
+}
+#footer-sec .footer-comp-info .footer-info input::placeholder{
+  font-family: Lato;
+font-size: 14px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: left;
+padding-left: 15px;
+color:#ADADAD;
+
+}
+#footer-sec .footer-comp-info .footer-info button {
+  height: 33px;
+  width: 96px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  border-color: #babddf;
+  margin-top: 14px;
+}
+#footer-sec  .footer-links h5 {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Lato';
+  font-weight: 700;
+  line-height: 24px;
+}
+#footer-sec  .footer-links ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  margin-top: 10px;
+}
+#footer-sec  .footer-links ul li a {
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 12px;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-weight: 400;
+}
+#footer-sec  .footer-top-sec .row.footer-btm-boreder {
+  padding-bottom: 33px;
+  border-bottom: solid 1px #c2c2c2ad;
+}
+
+#footer-sec  .footer-bottom-row.ps-3.pe-3 {
+  padding: 30px 0px 0px;
+}
+#footer-sec .footer-social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-sec ul.footer-soc-icons-list {
+  padding: 0px;
+  list-style: none;
+}
+#footer-sec ul.footer-soc-icons-list li {
+  display: inline-block;
+  padding-right: 15px;
+}
+#footer-sec .footer-bottom-row .row p {
+  color: #EEEEEE;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#footer-sec .footer-social-icons button.btn {
+  background: transparent;
+  width: 135px;
+  height: 40px;
+  border: solid 1px #fff;
+  border-radius: 4px;
+  text-align: left;
+}
+#footer-sec .dropdown-toggle::after {
+  top: 17px;
+  right: 12px;
+  position: absolute;
+}
+#footer-sec .footer-social-icons .dropdown button p img {
+  margin-right: 10px;
+}
+/* .dropdown-toggle::after {
+  background-image: url(../public/img/Group5356.svg) !important;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
